@@ -1,5 +1,8 @@
 @import 'headline.scss';
 @import 'header.scss';
+@import 'audience.scss';
+@import 'footer.scss';
+
 
 *,
 *::before,
@@ -21,31 +24,63 @@ h6 {
     font-size: inherit;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-family: 'Work Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 1;
+    color: $color-primary-text;
 }
 
 .page {
     max-width: 1400px;
     margin: auto;
-
+    display: flex;
+    flex-direction: column;
 }
 
 [class*="__container"] {
-    max-width: 1160px;
+    max-width: 320px;
+    padding: 0 15px;
     margin: 0 auto;
+
+    @media screen and (min-width: 1400px) {
+        max-width: 1170px;
+    }
+}
+
+.main {
+    flex: 1 1 auto;
 }
 
 .top-section {
-    padding: 39px 0 77px;
+    padding: 0 0 36px;
     background-color: $color-primary-bg;
+
+    @media screen and (min-width: 1400px) {
+        padding: 40px 0 77px;
+    }
 }
 
 .btn {
-    display: inline-block;
+    width: 100%;
+    height: 48px;
     border-radius: 2px;
     padding: 18px 28px;
     color: $color-secondary;
@@ -54,16 +89,27 @@ body {
     border: none;
     font-size: 18px;
     line-height: 13px;
+
+    @media screen and (min-width: 1400px) {
+        width: 160px;
+    }
 }
 
 .link {
     display: inline-block;
     border-radius: 2px;
+    width: 100%;
+    height: 48px;
     padding: 17px 28px;
+    text-align: center;
     color: $color-blue;
     background-color: $color-secondary;
     font-weight: 700;
     text-decoration: none;
     font-size: 18px;
     line-height: 13px;
+
+    @media screen and (min-width: 1400px) {
+        width: 160px;
+    }
 }
