@@ -94,6 +94,7 @@
   top: -27px;
 }
 .header__button {
+  display: none;
   align-self: flex-start;
 }
 
