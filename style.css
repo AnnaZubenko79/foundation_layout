@@ -227,6 +227,9 @@
   padding: 50px 0;
   background-color: rgba(0, 161, 198, 0.07);
 }
+.audience__button {
+  margin-bottom: 12px;
+}
 
 .audience-top {
   max-width: 555px;
@@ -286,6 +289,9 @@
 @media screen and (min-width: 1400px) {
   .audience {
     padding: 110px 0;
+  }
+  .audience__button {
+    margin-bottom: 0;
   }
   .audience-top {
     margin-bottom: 110px;
