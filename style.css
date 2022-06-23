@@ -149,21 +149,27 @@
   }
 }
 .order {
-  background-color: #f4f5f7;
+  background-color: darkgrey;
   padding: 50px 0;
 }
 .order__container {
   display: flex;
+}
+.order__wrapper {
+  margin: auto;
+  max-width: 947px;
+  width: 100%;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 .order__img-container {
-  min-height: 220px;
-  padding: 0 35px;
   margin-bottom: 40px;
 }
 .order__img {
   max-width: 100%;
+  min-height: 220px;
 }
 .order__descriprion {
   text-align: center;
@@ -189,7 +195,6 @@
   display: inline-block;
   max-width: 385px;
   width: 100%;
-  margin-bottom: 12px;
 }
 .order__form-email {
   width: 100%;
@@ -218,9 +223,17 @@
   .order__img-container {
     margin-bottom: 0;
   }
+  .order__img {
+    min-height: 296px;
+  }
   .order__descriprion {
-    margin-left: 100px;
     text-align: left;
+  }
+  .order__title {
+    margin-bottom: 21px;
+  }
+  .order__text {
+    margin-bottom: 26px;
   }
 }
 .audience {

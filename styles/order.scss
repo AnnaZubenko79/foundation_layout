@@ -1,21 +1,28 @@
 .order {
-    background-color: $color-grey;
+    background-color: darkgrey;
     padding: 50px 0;
 
     &__container {
         display: flex;
+    }
+
+    &__wrapper {
+        margin: auto;
+        max-width: 947px;
+        width: 100%;
+        display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &__img-container {
-        min-height: 220px;
-        padding: 0 35px;
         margin-bottom: 40px;
     }
 
     &__img {
         max-width: 100%;
+        min-height: 220px;
     }
 
     &__descriprion {
@@ -46,7 +53,6 @@
         display: inline-block;
         max-width: 385px;
         width: 100%;
-        margin-bottom: 12px;
     }
 
     &__form-email {
@@ -81,9 +87,20 @@
             margin-bottom: 0;
         }
 
+        &__img {
+            min-height: 296px;
+        }
+
         &__descriprion {
-            margin-left: 100px;
             text-align: left;
+        }
+
+        &__title {
+            margin-bottom: 21px;
+        }
+
+        &__text {
+            margin-bottom: 26px;
         }
     }
 }
