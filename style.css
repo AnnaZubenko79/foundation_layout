@@ -20,7 +20,6 @@
   line-height: 34px;
   margin-bottom: 30px;
   max-width: 450px;
-  padding-left: 4px;
 }
 .headline__button {
   margin-bottom: 15px;
@@ -40,14 +39,14 @@
     font-size: 80px;
     margin-bottom: 42px;
     line-height: 78px;
-    letter-spacing: -0.5px;
+    letter-spacing: -1px;
   }
   .headline__text {
     margin-bottom: 56px;
   }
   .headline__button {
     margin-bottom: 0;
-    margin-right: 10px;
+    margin-right: 3px;
   }
   .headline__image {
     position: absolute;
@@ -95,28 +94,21 @@
   top: -27px;
 }
 .header__button {
-  display: none;
-  background-color: #3040C4;
-  color: #fff;
-  width: 160px;
-  height: 48px;
-  font-size: 18px;
-  font-weight: 700;
-  border: none;
-  border-radius: 2px;
+  align-self: flex-start;
 }
 
 .navigation {
   display: none;
   margin-left: auto;
-  margin-right: 75px;
+  margin-right: 56px;
+  height: 48px;
 }
 .navigation__item {
   text-decoration: none;
   color: #2b292d;
   line-height: 25px;
   font-size: 18px;
-  margin-right: 33px;
+  margin-right: 44px;
 }
 .navigation__item:last-child {
   margin-right: 0;
