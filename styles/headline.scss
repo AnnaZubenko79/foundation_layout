@@ -31,13 +31,6 @@
         margin-bottom: 15px;
     }
 
-    // &__image {
-    //     position: absolute;
-    //     bottom: 0;
-    //     right: 25px;
-    //     z-index: 1;
-    // }
-
     &__img {
         max-width: 100%;
     }
@@ -46,10 +39,8 @@
 @media screen and (min-width: 1400px) {
     .headline {
         position: relative;
-        // min-height: 456px;
 
         &__content {
-            padding-left: 6px;
             margin-bottom: 0;
         }
 
@@ -61,7 +52,7 @@
         }
 
         &__text {
-            margin-bottom: 30px;
+            margin-bottom: 56px;
         }
 
         &__button {

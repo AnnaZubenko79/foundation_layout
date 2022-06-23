@@ -1,15 +1,43 @@
 @import 'variables.scss';
 
 .header {
-    // width: 1140px;
-    height: 62px;
-    // display: flex;
+    height: 64px;
+    padding-top: 8px;
     margin-bottom: 35px;
     background-color: $color-secondary;
+
+    &__logo {
+        height: 48px;
+    }
+
+    &__logo-image {
+        width: 48px;
+        height: 48px;
+        margin-right: 13px;
+    }
 
     &__container {
         display: flex;
         margin: auto;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__nav-btn {
+        width: 18px;
+        height: 13px;
+        background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png);
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 64px;
+            background-color: rgba(0, 0, 0, 0.15);
+            left: -20px;
+            top: -27px;
+        }
     }
 
     &__button {
@@ -25,43 +53,9 @@
     }
 }
 
-.logo {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    // flex: 0 1 299px;
-
-    &__text {
-        display: flex;
-        flex-direction: column;
-        // justify-content: center;
-    }
-
-    &__image {
-        flex: 0 0 40px;
-        height: 40px;
-        margin-right: 13px;
-    }
-
-    &__name {
-        font-size: 20px;
-        line-height: 25px;
-        font-weight: 700;
-    }
-
-    &__description {
-        display: none;
-        font-size: 18px;
-        line-height: 25px;
-        color: #2b292d;
-        opacity: 0.6;
-    }
-}
-
 .navigation {
     display: none;
     margin-left: auto;
-    margin-top: 7px;
     margin-right: 75px;
 
     &__item {
@@ -91,7 +85,13 @@
 
 @media screen and (min-width: 1400px) {
     .header {
+        padding-top: 0;
         margin-bottom: 76px;
+        background-color: transparent;
+
+        &__nav-btn {
+            display: none;
+        }
 
         &__button {
             display: block;

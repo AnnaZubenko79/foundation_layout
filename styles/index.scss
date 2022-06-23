@@ -1,5 +1,6 @@
 @import 'headline.scss';
 @import 'header.scss';
+@import 'order.scss';
 @import 'audience.scss';
 @import 'footer.scss';
 
@@ -111,5 +112,50 @@ body {
 
     @media screen and (min-width: 1400px) {
         width: 160px;
+    }
+}
+
+.logo {
+    height: 48px;
+    display: flex;
+    align-items: center;
+
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__image {
+        width: 48px;
+        height: 48px;
+        margin-right: 15px;
+    }
+
+    &__name {
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 700;
+    }
+
+    &__description {
+        display: none;
+        font-size: 18px;
+        line-height: 25px;
+        color: #2b292d;
+        opacity: 0.6;
+    }
+
+    @media screen and (min-width: 1400px) {
+        height: 60px;
+
+        &__image {
+            width: 60px;
+            height: 60px;
+        }
+
+        &__description {
+            display: block;
+        }
     }
 }
