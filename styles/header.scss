@@ -1,34 +1,28 @@
 @import 'variables.scss';
-
 .header {
   height: 64px;
   padding-top: 8px;
   margin-bottom: 35px;
   background-color: $color-secondary;
-
   &__logo {
     height: 48px;
   }
-
   &__logo-image {
     width: 48px;
     height: 48px;
     margin-right: 13px;
   }
-
   &__container {
     display: flex;
     margin: auto;
     align-items: center;
     justify-content: space-between;
   }
-
   &__nav-btn {
     width: 18px;
     height: 13px;
     background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png);
     position: relative;
-
     &::after {
       content: '';
       position: absolute;
@@ -39,35 +33,29 @@
       top: -27px;
     }
   }
-
   &__button {
     display: none;
     align-self: flex-start;
   }
 }
-
 .navigation {
   display: none;
   margin-left: auto;
   margin-right: 56px;
   height: 48px;
-
   &__item {
     text-decoration: none;
     color: #2b292d;
     line-height: 25px;
     font-size: 18px;
     margin-right: 44px;
-
     &:last-child {
       margin-right: 0;
     }
-
     &_selected {
       font-weight: 700;
     }
   }
-
   &__arrow {
     display: inline-block;
     background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png');
@@ -76,22 +64,18 @@
     margin-left: 11px;
   }
 }
-
 @media screen and (min-width: 1400px) {
   .header {
     padding-top: 0;
     margin-bottom: 76px;
     background-color: transparent;
-
     &__nav-btn {
       display: none;
     }
-
     &__button {
       display: block;
     }
   }
-
   .navigation {
     display: block;
   }

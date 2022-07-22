@@ -3,11 +3,9 @@
 .headline {
   position: relative;
   min-height: 456px;
-
   &__content {
     margin-bottom: 33px;
   }
-
   &__title {
     font-size: 50px;
     font-weight: 700;
@@ -18,54 +16,44 @@
     line-height: 1;
     letter-spacing: -0.31px;
   }
-
   &__text {
     font-size: 24px;
     line-height: 34px;
     margin-bottom: 30px;
     max-width: 450px;
   }
-
   &__button {
     margin-bottom: 15px;
   }
-
   &__img {
     max-width: 100%;
   }
 }
-
 @media screen and (min-width: $screen-lg) {
   .headline {
     position: relative;
-
     &__content {
       margin-bottom: 0;
     }
-
     &__title {
       font-size: 80px;
       margin-bottom: 42px;
       line-height: 78px;
       letter-spacing: -1px;
     }
-
     &__text {
       margin-bottom: 56px;
     }
-
     &__button {
       margin-bottom: 0;
       margin-right: 3px;
     }
-
     &__image {
       position: absolute;
       bottom: 0;
       right: 25px;
       z-index: 1;
     }
-
     &__img {
       max-width: 100%;
     }
