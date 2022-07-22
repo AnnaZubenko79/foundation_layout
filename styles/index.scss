@@ -1,44 +1,9 @@
+@import 'reset.scss';
 @import 'headline.scss';
 @import 'header.scss';
 @import 'order.scss';
 @import 'audience.scss';
 @import 'footer.scss';
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  font-weight: inherit;
-  font-size: inherit;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  padding: 0;
-  margin: 0;
-}
 
 body {
   font-family: 'Work Sans', sans-serif;
@@ -60,7 +25,7 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: $screen-lg) {
     max-width: 1170px;
   }
 }
@@ -73,7 +38,7 @@ body {
   padding: 0 0 36px;
   background-color: $color-primary-bg;
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: $screen-lg) {
     padding: 40px 0 77px;
   }
 }
@@ -90,7 +55,7 @@ body {
   font-size: 18px;
   line-height: 13px;
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: $screen-lg) {
     width: 160px;
   }
 }
@@ -109,7 +74,7 @@ body {
   font-size: 18px;
   line-height: 13px;
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: $screen-lg) {
     width: 160px;
   }
 }
@@ -144,7 +109,7 @@ body {
     opacity: 0.6;
   }
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: $screen-lg) {
     height: 60px;
 
     &__image {

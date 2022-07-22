@@ -92,9 +92,26 @@
   &__icon {
     margin-right: 10px;
   }
+  &__img {
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 17px;
+    &_twitter {
+      background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-twitter.png');
+      width: 21px;
+      height: 16px;
+    }
+    &_fb {
+      background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-fb.png');
+    }
+    &_linkedin {
+      background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-linkedIn.png');
+    }
+  }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: $screen-lg) {
   .footer {
     position: relative;
 

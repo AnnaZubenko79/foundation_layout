@@ -1,3 +1,39 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
 .headline {
   position: relative;
   min-height: 456px;
@@ -188,13 +224,15 @@
   display: inline-block;
   max-width: 385px;
   width: 100%;
+  margin-bottom: 12px;
 }
 .order__form-email {
   width: 100%;
+  height: 48px;
   font-size: 18px;
   line-height: 13px;
   padding: 17px 15px;
-  height: 48px;
+  text-align: center;
   border: 1px solid rgba(43, 41, 45, 0.2);
 }
 .order__info {
@@ -203,7 +241,7 @@
 }
 .order__info-link {
   text-decoration: underline;
-  color: #3040C4;
+  color: #3040c4;
 }
 
 @media screen and (min-width: 1400px) {
@@ -227,6 +265,9 @@
   }
   .order__text {
     margin-bottom: 26px;
+  }
+  .order__form-label {
+    margin-bottom: 0;
   }
 }
 .audience {
@@ -280,7 +321,7 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
 }
 .audience-bottom__item:hover {
-  background-color: #3040C4;
+  background-color: #3040c4;
   cursor: pointer;
 }
 .audience-bottom__item:not(:last-child) {
@@ -339,7 +380,7 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 40px;
-  border-bottom: 1px solid #E3E3E3;
+  border-bottom: 1px solid #e3e3e3;
   margin-bottom: 30px;
 }
 .footer-top__logo {
@@ -406,6 +447,23 @@
 .footer-bottom__icon {
   margin-right: 10px;
 }
+.footer-bottom__img {
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 17px;
+}
+.footer-bottom__img_twitter {
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-twitter.png");
+  width: 21px;
+  height: 16px;
+}
+.footer-bottom__img_fb {
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-fb.png");
+}
+.footer-bottom__img_linkedin {
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-linkedIn.png");
+}
 
 @media screen and (min-width: 1400px) {
   .footer {
@@ -418,7 +476,7 @@
     max-width: 1400px;
     width: 100%;
     height: 1px;
-    background-color: #2B292D;
+    background-color: #2b292d;
     opacity: 0.1;
   }
   .footer-top {
@@ -461,48 +519,12 @@
     margin-bottom: 0;
   }
 }
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  font-weight: inherit;
-  font-size: inherit;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  padding: 0;
-  margin: 0;
-}
-
 body {
   font-family: "Work Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1;
-  color: #2B292D;
+  color: #2b292d;
 }
 
 .page {
@@ -543,7 +565,7 @@ body {
   border-radius: 2px;
   padding: 18px 28px;
   color: #ffffff;
-  background-color: #3040C4;
+  background-color: #3040c4;
   font-weight: 700;
   border: none;
   font-size: 18px;
@@ -562,7 +584,7 @@ body {
   height: 48px;
   padding: 17px 28px;
   text-align: center;
-  color: #3040C4;
+  color: #3040c4;
   background-color: #ffffff;
   font-weight: 700;
   text-decoration: none;
