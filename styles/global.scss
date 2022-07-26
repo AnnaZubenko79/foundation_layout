@@ -1,0 +1,99 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  color: $color-primary-text;
+}
+.page {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+[class*='__container'] {
+  max-width: 320px;
+  padding: 0 15px;
+  margin: 0 auto;
+  @include desktop-up {
+    max-width: 1170px;
+  }
+}
+.main {
+  flex: 1 1 auto;
+}
+.top-section {
+  padding: 0 0 36px;
+  background-color: $color-primary-bg;
+  @include desktop-up {
+    padding: 40px 0 77px;
+  }
+}
+.btn {
+  width: 100%;
+  height: 48px;
+  border-radius: 2px;
+  padding: 18px 28px;
+  color: $color-secondary;
+  background-color: $color-blue;
+  font-weight: 700;
+  border: none;
+  font-size: 18px;
+  line-height: 13px;
+  @include desktop-up {
+    width: 160px;
+  }
+}
+.link {
+  display: inline-block;
+  border-radius: 2px;
+  width: 100%;
+  height: 48px;
+  padding: 17px 28px;
+  text-align: center;
+  color: $color-blue;
+  background-color: $color-secondary;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 13px;
+  @include desktop-up {
+    width: 160px;
+  }
+}
+.logo {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
+  &__image {
+    width: 48px;
+    height: 48px;
+    margin-right: 15px;
+  }
+  &__name {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 700;
+  }
+  &__description {
+    display: none;
+    font-size: 18px;
+    line-height: 25px;
+    color: #2b292d;
+    opacity: 0.6;
+  }
+  @include desktop-up {
+    height: 60px;
+    &__image {
+      width: 60px;
+      height: 60px;
+    }
+    &__description {
+      display: block;
+    }
+  }
+}

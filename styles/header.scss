@@ -1,9 +1,13 @@
-@import 'variables.scss';
 .header {
   height: 64px;
   padding-top: 8px;
   margin-bottom: 35px;
   background-color: $color-secondary;
+  @include desktop-up {
+    padding-top: 0;
+    margin-bottom: 76px;
+    background-color: transparent;
+  }
   &__logo {
     height: 48px;
   }
@@ -32,10 +36,16 @@
       left: -20px;
       top: -27px;
     }
+    @include desktop-up {
+      display: none;
+    }
   }
   &__button {
     display: none;
     align-self: flex-start;
+    @include desktop-up {
+      display: block;
+    }
   }
 }
 .navigation {
@@ -43,6 +53,9 @@
   margin-left: auto;
   margin-right: 56px;
   height: 48px;
+  @include desktop-up {
+    display: block;
+  }
   &__item {
     text-decoration: none;
     color: #2b292d;
@@ -62,21 +75,5 @@
     width: 8px;
     height: 5px;
     margin-left: 11px;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .header {
-    padding-top: 0;
-    margin-bottom: 76px;
-    background-color: transparent;
-    &__nav-btn {
-      display: none;
-    }
-    &__button {
-      display: block;
-    }
-  }
-  .navigation {
-    display: block;
   }
 }
