@@ -1,6 +1,7 @@
 # **Foundation_Layout**
 
 ### [**Site link**](https://annazubenko79.github.io/foundation_layout/)
+
 Layout supports mobile (up-to-320) and desktop (up-to-1400) versions
 
 ### **The tech stack is:**
@@ -11,6 +12,10 @@ Layout supports mobile (up-to-320) and desktop (up-to-1400) versions
 - [Sass (Scss)](https://sass-lang.com/)
 - [BEM methodology](https://en.bem.info/methodology/)
 
-**Author**
+#### **Lesson5**
 
-- Anna Zubenko
+### **WEBPACK:**
+
+Webpack -используется чтобы большое количество наших файлов и файлов сторонних библиотек собрать в кучу и чтобы это все работало
+
+image.png
