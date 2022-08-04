@@ -12,10 +12,6 @@ Layout supports mobile (up-to-320) and desktop (up-to-1400) versions
 - [Sass (Scss)](https://sass-lang.com/)
 - [BEM methodology](https://en.bem.info/methodology/)
 
-#### **Lesson5**
+**Author**
 
-### **WEBPACK:**
-
-Webpack -используется чтобы большое количество наших файлов и файлов сторонних библиотек собрать в кучу и чтобы это все работало
-
-image.png
+- Anna Zubenko
