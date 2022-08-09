@@ -68,6 +68,7 @@
       inset 0px 1px 0px rgba(255, 255, 255, 0.1);
     @include desktop-up {
       max-width: 282px;
+      width: 100%;
     }
     &:hover {
       background-color: $color-blue;

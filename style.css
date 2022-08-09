@@ -500,6 +500,7 @@ body {
 @media (min-width: 1400px) {
   .audience-bottom__item {
     max-width: 282px;
+    width: 100%;
   }
 }
 .audience-bottom__item:hover {
